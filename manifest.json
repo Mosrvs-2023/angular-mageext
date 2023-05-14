@@ -1,0 +1,14 @@
+{
+  "name": "Mage Chrome Extension",
+  "version": "1.0.0",
+  "description": "A Chrome extension that generates images from text prompts using Mage.space",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["contentscript.js"]
+    }
+  ]
+}
